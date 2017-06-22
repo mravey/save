@@ -1,5 +1,5 @@
 [core]
-	excludesfile = /Users/matthieu/.gitignore_global
+	excludesfile = /Users/mravey/.gitignore_global
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
@@ -8,6 +8,4 @@
 	trustExitCode = true
 [user]
 	name = mravey
-	email = mravey@zendesk.com
-[commit]
-	template = /Users/matthieu/.stCommitMsg
+	email = ravey.matt@gmail.com
