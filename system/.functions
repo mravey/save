@@ -1,0 +1,13 @@
+function remove_branches {
+  git fetch -p && for branch in `git branch -vv | awk '{print $1,$4}' | grep 'gone]' | awk '{print $1}'`; do git branch -D $branch; done
+}
+
+function remove_branch {
+  git branch -D $1
+}
+
+function git_push_force {
+  current_branch=$(git branch | grep \* | cut -d ' ' -f2)
+
+  git push --force origin $current_branch
+}
