@@ -4,7 +4,6 @@ brew update
 brew upgrade
 
 apps=(
-	elixir
 	git
 	heroku
 	jq
