@@ -8,6 +8,7 @@ apps=(
 	google-chrome
 	intellij-idea
 	iterm2
+	opera-neon
 	skype
 	slack
 	sourcetree
