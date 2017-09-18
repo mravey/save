@@ -1,6 +1,7 @@
 brew tap caskroom/cask
 
 apps=(
+	adobe-acrobat-reader
 	cinch
 	cloudapp
 	dropbox

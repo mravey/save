@@ -9,6 +9,7 @@ apps=(
 	heroku
 	jq
 	python
+	sbt
 	wget
 )
 
