@@ -1,6 +1,7 @@
 brew tap caskroom/cask
 
 apps=(
+	1password
 	adobe-acrobat-reader
 	cinch
 	cloudapp
@@ -9,6 +10,7 @@ apps=(
 	google-chrome
 	intellij-idea
 	iterm2
+	java
 	opera-neon
 	skype
 	slack
@@ -17,6 +19,7 @@ apps=(
 	transmission
 	vlc
 	webstorm
+	zeplin
 )
 
 brew cask install "${apps[@]}"
