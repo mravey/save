@@ -1,0 +1,9 @@
+\set QUIET 1
+\pset null '[null]'
+
+\set PROMPT1 '%[%033[1m%][%/] # '
+
+\timing
+
+\x auto
+\unset QUIET
