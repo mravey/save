@@ -7,3 +7,5 @@ source ~/Code/mravey/save/git/git-completion.bash
 source ~/Code/mravey/save/git/git-prompt.sh
 
 export PS1='mravey:\W$(__git_ps1) \$ '
+
+export PATH=~/Library/Python/3.6/bin:$PATH
