@@ -9,6 +9,7 @@ apps=(
 	jq
 	python
 	sbt
+	terraform
 	wget
 )
 
