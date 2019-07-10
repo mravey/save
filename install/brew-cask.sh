@@ -10,6 +10,16 @@ apps=(
 	intellij-idea
 	iterm2
 	java
+	keybase
+	ngrok
+	qlcolorcode 
+	qlstephen
+	qlmarkdown 
+	quicklook-json 
+	webpquicklook 
+	suspicious-package 
+	quicklookase 
+	qlvideo
 	skype
 	slack
 	sourcetree

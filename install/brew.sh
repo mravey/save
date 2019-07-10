@@ -5,11 +5,15 @@ brew upgrade
 
 apps=(
 	git
+	gradle
 	heroku
 	jq
+	node
+	postgresql
 	python
 	sbt
 	terraform
+	tree
 	wget
 )
 

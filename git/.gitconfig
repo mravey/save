@@ -9,3 +9,5 @@
 [user]
 	name = mravey
 	email = ravey.matt@gmail.com
+[commit]
+	template = /Users/mravey/.stCommitMsg
