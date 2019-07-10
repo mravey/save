@@ -1,7 +1,5 @@
 \set QUIET 1
-\pset null '[null]'
-
-\set PROMPT1 '%[%033[1m%][%/] # '
+\pset null '_NULL_'
 
 \timing
 
