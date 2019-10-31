@@ -9,12 +9,14 @@ apps=(
 	heroku
 	jq
 	node
+	nvm
 	postgresql
 	python
 	sbt
 	terraform
 	tree
 	wget
+	watchman
 )
 
 brew install "${apps[@]}"
