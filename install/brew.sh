@@ -13,6 +13,7 @@ apps=(
 	postgresql
 	python
 	sbt
+	stripe/stripe-cli/stripe
 	terraform
 	tree
 	wget
