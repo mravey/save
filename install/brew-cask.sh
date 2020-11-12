@@ -23,7 +23,7 @@ apps=(
 	skype
 	slack
 	sourcetree
-	sublime-text2
+	sublime-text
 	transmission
 	vlc
 	zeplin
