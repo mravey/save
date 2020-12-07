@@ -4,14 +4,23 @@ brew update
 brew upgrade
 
 apps=(
+	bat
+	bash
+	bash-completion@2
+	fd
+	fzf
 	git
 	gradle
+	gpg
 	heroku
 	jq
+	kubectl
+	kubectx
 	node
 	nvm
 	postgresql
 	python
+	ripgrep
 	sbt
 	stripe/stripe-cli/stripe
 	terraform

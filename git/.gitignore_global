@@ -1,3 +1,5 @@
+.idea
+*.iml
 *~
 .DS_Store
 aws_public_access_key
@@ -5,3 +7,4 @@ dump.rdb
 secrets
 settings.json
 yarn-error.log
+*.dev.http

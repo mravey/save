@@ -1,5 +1,5 @@
 [core]
-	excludesfile = /Users/mravey/.gitignore_global
+	excludesfile = /Users/matthieu/.gitignore_global
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
@@ -7,7 +7,13 @@
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [user]
-	name = mravey
-	email = ravey.matt@gmail.com
+	name = Matthieu Ravey
+	email = matthieu.ravey@qonto.com
 [commit]
-	template = /Users/mravey/.stCommitMsg
+	template = /Users/matthieu/.stCommitMsg
+[url "https://oauth2:mEHJcgbGi2kVV6jmRA4G@gitlab.qonto.co"]
+	insteadOf = https://gitlab.qonto.co
+[gpg]
+	program = /usr/local/Cellar/gnupg/2.2.25/bin/gpg
+[includeIf "gitdir:~/Code/qonto/"]
+    path = ~/Code/qonto/.gitconfig
