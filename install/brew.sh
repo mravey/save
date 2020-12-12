@@ -5,6 +5,7 @@ brew upgrade
 
 apps=(
 	git
+	go
 	gradle
 	heroku
 	jq
