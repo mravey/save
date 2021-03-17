@@ -14,7 +14,6 @@ apps=(
 	ngrok
 	qlcolorcode 
 	qlstephen
-	qlmarkdown 
 	quicklook-json 
 	webpquicklook 
 	suspicious-package 

@@ -11,9 +11,9 @@
 	email = matthieu.ravey@qonto.com
 [commit]
 	template = /Users/matthieu/.stCommitMsg
-[url "https://oauth2:mEHJcgbGi2kVV6jmRA4G@gitlab.qonto.co"]
+[url "https://oauth2:vBywxiKBo9LHQdXySGzN@gitlab.qonto.co"]
 	insteadOf = https://gitlab.qonto.co
 [gpg]
-	program = /usr/local/Cellar/gnupg/2.2.25/bin/gpg
+	program = /usr/local/bin/gpg
 [includeIf "gitdir:~/Code/qonto/"]
     path = ~/Code/qonto/.gitconfig
