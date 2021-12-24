@@ -1,71 +1,20 @@
 export QONTO_SRC_PATH=/Users/matthieu/Code/qonto
 export CBS_SRC_PATH=/Users/matthieu/Code/qonto/cbs
+export QONTO_TEMP_PATH=/tmp
 source "$QONTO_SRC_PATH/devenv/activate"
 export CROWDIN_API_KEY=659af79e6dfc78574d84fa62bcf5b01f
 export GOPRIVATE=gitlab.qonto.co
 
-function connect_to_qonto_production_api {
-	kubectx cbs-production-current
-	kubens master
-	container_id=$(kubectl get pods | grep api-public | head -n 1 | awk '{print $1}')
+alias kduplicate='kubectl-duplicate'
 
-	kubectl exec -ti $container_id -- bash
+function connect_to_qonto_production {
+	kubectx production
+	kubens master
+	kubectl-duplicate
 }
 
-function connect_to_qonto_production_biller {
-	kubectx cbs-production-current
-	kubens master
-	container_id=$(kubectl get pods | grep biller-public | head -n 1 | awk '{print $1}')
-
-	kubectl exec -ti $container_id -- bash	
-}
-
-function connect_to_qonto_production_core {
-	kubectx cbs-production-current
-	kubens master
-	container_id=$(kubectl get pods | grep core-master | head -n 1 | awk '{print $1}')
-
-	kubectl exec -ti $container_id -- sh	
-}
-
-function connect_to_qonto_production_autho {
-	kubectx cbs-production-current
-	kubens master
-	container_id=$(kubectl get pods | grep autho-master | head -n 1 | awk '{print $1}')
-
-	kubectl exec -ti $container_id -- sh	
-}
-
-function connect_to_qonto_staging_api {
+function connect_to_qonto_staging {
 	kubectx staging
 	kubens $1
-	container_id=$(kubectl get pods | awk '/^api-/ {print $1}' | awk '!/^api-(clock|worker|consumer|kafka)/ {print $1}')
-
-	kubectl exec -ti $container_id -- bash
-}
-
-function connect_to_qonto_staging_biller {
-	kubectx staging
-	kubens $1
-	container_id=$(kubectl get pods | grep biller | awk '!/^biller-(clock|worker|consumer|kafka)/ {print $1}')
-
-	kubectl exec -ti $container_id -- bash
-}
-
-function connect_to_qonto_staging_core {
-	kubectx staging
-	kubens $1
-	container_id=$(kubectl get pods | grep core | awk '!/^core-(clock|worker|consumer|kafka)/ {print $1}')
-
-	echo $container_id
-
-	kubectl exec -ti $container_id -- bash
-}
-
-function connect_to_qonto_staging_autho {
-	kubectx staging
-	kubens $1
-	container_id=$(kubectl get pods | grep autho- | awk '!/^autho-(clock|worker|consumer|kafka)/ {print $1}')
-
-	kubectl exec -ti $container_id -- bash
+	kubectl-duplicate -n $1
 }

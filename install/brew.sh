@@ -7,12 +7,14 @@ apps=(
 	bat
 	bash
 	bash-completion@2
+	docker-credential-helper-ecr
 	fd
 	fzf
 	git
 	gradle
 	gpg
 	heroku
+	imagemagick
 	jq
 	kubectl
 	kubectx
