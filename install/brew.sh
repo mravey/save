@@ -4,17 +4,11 @@ brew update
 brew upgrade
 
 apps=(
+	bat
 	git
-	go
-	gradle
-	heroku
 	jq
-	node
 	nvm
 	postgresql
-	python
-	sbt
-	stripe/stripe-cli/stripe
 	terraform
 	tree
 	wget
